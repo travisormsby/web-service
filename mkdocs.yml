@@ -1,0 +1,43 @@
+site_name: OK, but like, what's a web service really?
+nav:
+  - Introduction: index.md
+  - Client vs. Server: client-vs-server.md
+  - "\"Portal\" vs \"Server\"": portal-vs-server.md
+  - Service vs. Layer item: service-vs-layer-item.md
+  - Layer item vs. Layer: layer-item-vs-layer.md
+  - Map service vs Feature service: map-service-vs-feature-service.md
+  - Cached vs. Dynamic map service: cached-vs-dynamic.md
+  - Hosted vs. By-reference service: hosted-vs-by-reference.md
+  - Answers: answers.md
+  - Resources: resources.md
+
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      primary: custom
+      accent: deep orange
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/travisormsby
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/travis-ormsby/
+
+extra_css:
+  - stylesheets/extra.css
