@@ -41,3 +41,6 @@ extra:
 
 extra_css:
   - stylesheets/extra.css
+
+copyright:
+  © 2024 <a href="https://github.com/travisormsby" target"_blank" rel="noopener">Travis Ormsby</a>
