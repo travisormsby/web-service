@@ -33,5 +33,5 @@
 0. If you have a feature service that is edited annually, should that service be cached? **No. Caching only applies to map services because the image of the data can be pregenerated. The feature geometry of a feature service cannot be cached.**
 
 ## Hosted vs. By-reference service
-0. An organization wants to expand the number of people who can publish services but is concerned about the additional load on the ArcGIS Server machine. Should they train these new publishers to create hosted services or by-ref services to minimize server machine load? **Hosted. By-ref services require more machine resources.**
+0. An organization wants to expand the number of people who can publish services but is concerned about the additional load on the ArcGIS Server machine. Should they train these new publishers to create hosted services or by-ref services to minimize server machine load? **Hosted. By-ref services require more memory.**
 0. A gas utility needs to make sure that the geometry of their features adheres to defined spatial relationships (for example, no overlaps in pipeline features). Should they use an ArcGIS-managed or user-managed datastore for these features? **User-managed. ArcGIS-managed datastores cannot use topology rules to validate feature geometry.** 

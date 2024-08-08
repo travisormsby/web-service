@@ -15,7 +15,7 @@ In the ArcGIS system, clients are typically a web browser, [ArcGIS Pro](https://
     0. Which application was the client that sent the request?
     0. Which application was the server that sent the resource?
 
-# Summary
+## Summary
 |              | Client    | Server    |
 | ------------ | --------- | --------- |
 | **Sends**    | Requests  | Responses | 
