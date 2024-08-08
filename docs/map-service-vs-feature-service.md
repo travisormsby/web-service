@@ -29,15 +29,15 @@ Because map and feature services are different kinds of services, they are assoc
     0. What kind of layer item was created when you added the second URL?
 
 ## Summary
-|                       | Map Service	  | Feature Service |
-| --------------------- | --------------- | --------------- |
-Analyzable*             | ✔️              | ✔️             |
-Queryable*              | ✔️              | ✔️             |
-Attribute table access* | ✔️              | ✔️             |
-Enables editing*	    | ❌              | ✔️             |
-Geometry rendered by    | Server          | Client          |
-REST endpoint           | MapServer       | FeatureServer   |
-File transfer size      | Smaller         | Larger          |
-Associated portal item  | Map image layer |	Feature layer   |
+|                       | Map Service	            | Feature Service  |
+| --------------------- | ------------------------- | ---------------- |
+Analyzable*             | ✔️                        | ✔️              |
+Queryable*              | ✔️                        | ✔️              |
+Attribute table access* | ✔️                        | ✔️              |
+Enables editing*	    | ❌                        | ✔️              |
+Geometry rendered by    | Server                    | Client           |
+REST endpoint           | MapServer                 | FeatureServer    |
+File transfer size      | Generally smaller         | Generally larger |
+Associated portal item  | Map image layer           | Feature layer    |
 
 \* If enabled as a capability of the service
