@@ -1,3 +1,5 @@
+# Resources
+
 ## Client vs. Server
 * [ArcGIS Pro | 2D, 3D & 4D GIS Mapping Software](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview)
 * [ArcGIS Online | Cloud-Based GIS Mapping Software Solution](https://www.esri.com/en-us/landing-page/product/2019/arcgis-online/overview)
