@@ -8,7 +8,7 @@ A [service](https://enterprise.arcgis.com/en/server/latest/publish-services/wind
 A service makes these capabilities available via a URL that let you use web protocols to access the resource. These URLs are referred to as [REST endpoints](https://developers.arcgis.com/rest/services-reference/enterprise/get-started-with-the-services-directory.htm). Some services also make resources available through a different standard called SOAP, but this is rarely used. In this workshop, you will work only with REST endpoints.
 
 ## Layer item
-A [layer item](https://doc.arcgis.com/en/arcgis-online/manage-data/add-items.htm) references a particular service, but it does not change that service’s capabilities. You can use a layer item to represent the resource with different symbology, popups, or filters than the service’s default representation. Layer items (unlike services) are items in the portal, so you can also use a layer item to integrate its associated service into the portal’s content management capabilities. In both ArcGIS Online and ArcGIS Enterprise, the typical publishing process involves adding a new layer item to the portal, which automatically creates the associated service for that layer item. 
+A [layer item](https://doc.arcgis.com/en/arcgis-online/manage-data/add-items.htm) references a particular service, but it does not change that service’s capabilities. You can use a layer item to represent the resource with different symbology, popups, or filters than the service’s default representation. Layer items (unlike services) are items in your organization. That menas you can also use a layer item to integrate its associated service into the organization's content management capabilities. In both ArcGIS Online and ArcGIS Enterprise, the typical publishing process involves adding a new layer item to the portal, which automatically creates the associated service for that layer item. 
 
 Because [a layer item is not a service](https://www.esri.com/arcgis-blog/products/arcgis-living-atlas/mapping/give-the-rest-a-rest/), it does not have its own REST endpoint. Instead, it has a unique [Item ID](https://developers.arcgis.com/documentation/glossary/item-id/) and it references the REST endpoint of the underlying service. One important implication of the fact that a layer item sits on top of a service is that there might be multiple layer items that all reference the same service. A second implication is that you can create layer items for any service whose REST endpoint you can access, even if that service exists outside your organization.
 
@@ -23,7 +23,7 @@ Because [a layer item is not a service](https://www.esri.com/arcgis-blog/product
 0. Title the item RainGaugeSites_<your initials\>, then click Save
 0. On the item details page, note the item ID in the URL (it is a 32 character hexadecimal value) 
 0. Change the sharing options to share this item with everyone
-0. At the bottom of the Overview, copy the URL
+0. At the bottom of the Overview, copy the URL. This URL is the REST endpoint of the service associated with the item.
 0. Navigate back to the Content tab so you can see all the items owned by your username
 0. In an incognito browser window, navigate to the URL you copied, then click the link to the RainGaugeSites layer
 0. Scroll to the bottom of the page and review the supported operations

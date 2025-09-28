@@ -26,16 +26,16 @@
 * [item ID](https://developers.arcgis.com/documentation/glossary/item-id/)
 ## Layer item vs. Layer
 * [Assign layer IDs—ArcGIS Pro](https://pro.arcgis.com/en/pro-app/latest/help/sharing/overview/assign-layer-ids.htm)
-## Map service vs. Feature service
+## Map services vs. Feature services
 * [Geoprocessing services—ArcGIS Server](https://enterprise.arcgis.com/en/server/latest/publish-services/windows/what-is-a-geoprocessing-service.htm)
 * [Printing in web applications—ArcGIS Server](https://enterprise.arcgis.com/en/server/latest/publish-services/windows/printing-in-web-applications.htm)
 * [Map service—ArcGIS Server](https://enterprise.arcgis.com/en/server/latest/publish-services/windows/what-is-a-map-service.htm)
 * [Feature services—ArcGIS Server](https://enterprise.arcgis.com/en/server/latest/publish-services/windows/what-is-a-feature-service-.htm)
 * [Map image layers—Portal for ArcGIS](https://enterprise.arcgis.com/en/portal/latest/use/map-image-elevation-imagery-layers.htm#ESRI_SECTION1_E2CAA2B7A0394D75AF58759CC1D070EA)
 * [Feature layers—Portal for ArcGIS](https://enterprise.arcgis.com/en/portal/latest/use/feature-layers.htm)
-## Cached vs. Dynamic map service
+## Cached map services vs. Dynamic map services
 * [What is map caching?—ArcGIS Server](https://enterprise.arcgis.com/en/server/latest/publish-services/windows/what-is-map-caching-.htm)
-## Hosted vs. By-reference service
+## Hosted services vs. Instance-based services
 * [Publish hosted feature layers—ArcGIS Online Help](https://doc.arcgis.com/en/arcgis-online/manage-data/publish-features.htm)
 * [What is ArcGIS Data Store?—ArcGIS Enterprise](https://enterprise.arcgis.com/en/data-store/latest/install/windows/what-is-arcgis-data-store.htm)
 * [Register data stores—Portal for ArcGIS](https://enterprise.arcgis.com/en/portal/latest/use/data-publishing-and-enterprise.htm#ESRI_SECTION1_2CF57CE5A9E84F07A16946F538BAD049)

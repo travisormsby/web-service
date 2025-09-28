@@ -1,21 +1,37 @@
-# Hosted vs. By-reference service
+# Hosted vs. instance-based service
 
 For map and feature services, there are two different technologies that enable turning feature classes on disk into services accessible from a REST endpoint. 
 
 ## Hosted services
 Feature services published to ArcGIS Online are considered “hosted”. This phrasing means more than just saying that ArcGIS Online generically serves as a host for data and services. It refers to a particular technology that makes resources available as web services. This technology provides only limited control over the service configuration and requires that the underlying data be copied to a specially optimized ArcGIS-managed data store.
 
-You can also publish hosted services to ArcGIS Enterprise because you can create your own ArcGIS-managed data stores. The relational and spatiotemporal data stores both support hosted feature services. Hosted 3D scene services are supported either by a tile cache data store or an object store (depending on your version of ArcGIS Enterprise). Raster data stores support hosted image services. Hosted vector tile services respond to requests by serving information from a directory where the tiles are stored. When you publish a hosted service to ArcGIS Enterprise, the data must be copied into one of these specialized data stores.
+You can also publish hosted services to ArcGIS Enterprise because you can create your own ArcGIS-managed data stores. 
+
+|Hosted service type|Data store|
+|---|---|
+|Hosted feature service|Relational and spatiotemporal big data store|
+|Hosted image service|Raster store|
+|Hosted 3D scene service|Tile cache (before version 11.4) or object store (11.4 and later)|
+|Hosted vector tile service|ArcGIS Server machine file system|
+
+When you publish a hosted service to ArcGIS Enterprise, the data must be copied into one of these specialized data stores.
 
 The main benefit of a hosted service is that it is very memory efficient. You can have many hosted services for a small memory footprint. Hosted services are also automatically tuned and optimized by the ArcGIS system. For that reason, there isn't much you can configure for hosted services.
 
-## By-reference services
-ArcGIS Enterprise also supports a second type of service, which is often called a by-reference (or by-ref) service. These services use a different technology called an ArcSOC that does not require a specialized data store. The data might be stored in an enterprise geodatabase, a network share, a cloud store, or even just a directory on the ArcGIS Server machine. ArcGIS Online does not support by-ref services.
+## Instance-based services
+ArcGIS Enterprise also supports a second type of service based on the same technology that powers ArcGIS Pro. These types of services go by several different names, depending on who you ask:
 
-One benefit of a by-ref service comes from using a data store that you have full control over. With by-ref services there is no need to copy data, and you can take advantage of the capabilities of user-managed data stores that ArcGIS-managed data stores do not have (like versioning, topology, or direct SQL access). Another advantage is that you also get substantially more control over the precise service configuration than you do with hosted services.
+- By-reference (or by-ref) service
+- Non-hosted service
+- ArcGIS Server service
+- ArcObjects service
+- ArcSOC (or SOC) service
 
-## Non-hosted, non-referenced services
-Some services are neither hosted nor by-ref. The most common way to create this type of service is by sharing a Map Image Layer by copy to ArcGIS Enterprise from ArcGIS Pro. This process creates an ArcSOC for the service, which means it is not hosted. The data are copied into an ArcGIS-managed data store on the file system of the ArcGIS Server machine, which means it's not referencing user-managed data. 
+Because the settings for these services largely depends on what Server Manager refers to as intances, this workshop will refer to them as instance-based services.
+
+The most important implication of using instance-based services is that they do not need to reference data in a specially-optimized ArcGIS-managed storage location. The data might be stored in an enterprise geodatabase, a network share, a cloud store, or even just a directory on the ArcGIS Server machine. For this reason, ArcGIS Online does not support instance-based services.
+
+One benefit of an instance-based service comes from using a data store that you have full control over. With instance-based services there is no need to copy data, and you can take advantage of the capabilities of user-managed data stores that ArcGIS-managed data stores do not have (like versioning, topology, or direct SQL access). Another advantage is that you also get substantially more control over the precise service configuration than you do with hosted services.
 
 ## Questions
 0. An organization wants to expand the number of people who can publish services but is concerned about the using too much memory on the ArcGIS Server machine. Which type of service will minimize the memory footprint of services?

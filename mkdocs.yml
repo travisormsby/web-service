@@ -6,8 +6,8 @@ nav:
   - Service vs. Layer item: service-vs-layer-item.md
   - Layer item vs. Layer: layer-item-vs-layer.md
   - Map service vs Feature service: map-service-vs-feature-service.md
-  - Cached vs. Dynamic map service: cached-vs-dynamic.md
-  - Hosted vs. By-reference service: hosted-vs-by-reference.md
+  - Cached map service vs. Dynamic map service: cached-vs-dynamic.md
+  - Hosted service vs. Instance-based service: hosted-vs-instance.md
   - Check your own services: check-your-own-services.md
   - Answers: answers.md
   - Resources: resources.md
