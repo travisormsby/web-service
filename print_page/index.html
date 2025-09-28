@@ -1,0 +1,1418 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Print Site - OK, but like, what's a web service really?</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/print-site.css">
+    
+      <link rel="stylesheet" href="../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  
+        <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
+        })
+        </script>
+        </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#index" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="OK, but like, what&#39;s a web service really?" class="md-header__button md-logo" aria-label="OK, but like, what's a web service really?" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OK, but like, what's a web service really?
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Print Site
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="deep-orange"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="OK, but like, what&#39;s a web service really?" class="md-nav__button md-logo" aria-label="OK, but like, what's a web service really?" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    OK, but like, what's a web service really?
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client-vs-server/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Client vs. Server
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../portal-vs-server/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    "Portal" vs "Server"
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../service-vs-layer-item/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Service vs. Layer item
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layer-item-vs-layer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Layer item vs. Layer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../map-service-vs-feature-service/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Map service vs Feature service
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cached-vs-dynamic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cached map service vs. Dynamic map service
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hosted-vs-instance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hosted service vs. Instance-based service
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../check-your-own-services/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Check your own services
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../answers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Answers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Resources
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#index" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#client-vs-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 Client vs. Server
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#portal-vs-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 "Portal" vs "Server"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service-vs-layer-item" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 Service vs. Layer item
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layer-item-vs-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 Layer item vs. Layer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#map-service-vs-feature-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      6 Map service vs Feature service
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cached-vs-dynamic" class="md-nav__link">
+    <span class="md-ellipsis">
+      7 Cached map service vs. Dynamic map service
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hosted-vs-instance" class="md-nav__link">
+    <span class="md-ellipsis">
+      8 Hosted service vs. Instance-based service
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-your-own-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      9 Check your own services
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#answers" class="md-nav__link">
+    <span class="md-ellipsis">
+      10 Answers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      11 Resources
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+
+
+
+
+                  
+
+
+
+<div id="print-site-page" class="print-site-enumerate-headings print-site-enumerate-figures">
+        <section id="print-site-cover-page">
+            
+    <h1>OK, but like, what's a web service really?</h1>
+
+        </section>
+        
+        <section class="print-page">
+            <div id="print-page-toc" data-toc-depth="3">
+                <nav role='navigation' class='print-page-toc-nav'>
+                <h1 class='print-page-toc-title'>Table of Contents</h1>
+                </nav>
+            </div>
+        </section>
+        <section class="print-page" id="index" heading-number="1"><h1 id="index-introduction">Introduction</h1>
+<p>Traditionally, GIS resources have been accessed directly. You would pull data into an application running on a local machine and use that machine to perform work on those data. This strategy has the benefit of making good use of powerful desktop or workstation computers, but it has the drawback of making it more difficult to share resources. Sharing direct-access resources often means making multiple copies of data, which are hard to keep in sync. Even with an effective data management strategy, the complexity of the software required means that only a few people in any given organization have the skills to make use of the resources.</p>
+<p>The difficulty of sharing GIS resources is a barrier to good decision making because it limits who will be able to benefit from the insights of geospatial data. One strategy for overcoming this barrier is to make GIS resources available as web services. Instead of accessing data directly, a web service makes data available over the network. Instead of analyzing data on a local machine, a web service enables analysis to run on a remote server. Instead of using a single complex GIS application, web services enable the creation of multiple web apps tailored to individual workflows.</p>
+<p>There are several different technologies for turning GIS resources into web services. This workshop will address how those services are created in Esri’s ArcGIS system. The focus will be on clarifying ambiguity in the terms used throughout the ArcGIS system and differentiating between separate components that are often incorrectly referred to interchangeably.</p></section><section class="print-page" id="client-vs-server" heading-number="2"><h1 id="client-vs-server-client-vs-server">Client vs. Server</h1>
+<p>A client is an application that sends a request for a resource to some other application and receives that resource in response. That other application is called a server. Sometimes people use the words “client” and “server” to refer to the machines on which these applications run, but it is more accurate to say that clients and servers are software, not hardware. It might even be the case that a single application sometimes acts as a client by sending requests and sometimes acts as a server by responding to requests.</p>
+<p>In the ArcGIS system, clients are typically a web browser, <a href="https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview">ArcGIS Pro</a>, or a mobile app. When you type a URL into the browser or drag a portal content item into a map, you are using the client to make a request on that resource. <a href="https://www.esri.com/en-us/landing-page/product/2019/arcgis-online/overview">ArcGIS Online</a> and <a href="https://www.esri.com/en-us/arcgis/products/arcgis-enterprise/overview">ArcGIS Enterprise</a> are typically the servers. They will receive a request from the client and provide the resource.</p>
+<p><img alt="Client-Server relationship" src="../images/client-server.png" /></p>
+<h2 id="client-vs-server-exercise-make-a-request-for-a-resource-5-minutes">Exercise: Make a request for a resource (5 minutes)</h2>
+<ol>
+<li>In your web browser, navigate to <a href="https://gisdata.mn.gov/dataset/us-mn-state-metc-env-mces-rain-gauge-sites">https://gisdata.mn.gov/dataset/us-mn-state-metc-env-mces-rain-gauge-sites</a></li>
+<li>Download the shapefile version of this data set</li>
+<li>Answer these questions<ol>
+<li>What was the resource that was requested when you clicked Download?</li>
+<li>Which application was the client that sent the request?</li>
+<li>Which application was the server that sent the resource?</li>
+</ol>
+</li>
+</ol>
+<h2 id="client-vs-server-summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Client</th>
+<th>Server</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sends</strong></td>
+<td>Requests</td>
+<td>Responses</td>
+</tr>
+<tr>
+<td><strong>Receives</strong></td>
+<td>Responses</td>
+<td>Requests</td>
+</tr>
+</tbody>
+</table></section><section class="print-page" id="portal-vs-server" heading-number="3"><h1 id="portal-vs-server-portal-vs-server">Portal vs Server</h1>
+<p>In the ArcGIS context, there are several different components that include the words “portal” or “server” in their name, which makes it hard to know exactly what these terms might mean. They could be referencing software components you install, the capabilities provided by that software, or the applications users interact with to access those capabilities.</p>
+<h2 id="portal-vs-server-software-you-install">Software you install</h2>
+<p><a href="https://enterprise.arcgis.com/en/portal/latest/install/windows/welcome-to-the-portal-for-arcgis-installation-guide.htm">Portal for ArcGIS</a> and <a href="https://enterprise.arcgis.com/en/server/latest/install/windows/welcome-to-the-arcgis-for-server-install-guide.htm">ArcGIS Server</a> are software components you install on infrastructure you control. Generally you would do this as part of an ArcGIS Enterprise deployment. These are also the names of the processes that run on the infrastructure after you install these components. Sometimes when people use the words "portal" and "server", they are referring those these software components. Because ArcGIS Online is Software-as-a-Service (SaaS), you do not install or configure any software, so there is not equivalent in ArcGIS Online to Portal for ArcGIS or ArcGIS Server. </p>
+<h2 id="portal-vs-server-capabilities-provided-by-software">Capabilities provided by software</h2>
+<p>If you install and configure Portal for ArcGIS, you will get an <a href="https://enterprise.arcgis.com/en/portal/latest/administer/windows/what-is-portal-for-arcgis-.htm">ArcGIS Enterprise organization</a>. You can get an ArcGIS Online organization if you subscribe to ArcGIS Online. Either way, this organization's members are named users who have credentials to log into the system. Organization administrators control the <a href="https://doc.arcgis.com/en/arcgis-online/administer/user-types-orgs.htm">user type</a> and <a href="https://doc.arcgis.com/en/arcgis-online/administer/member-roles.htm">role</a> of each member. The organization has <a href="https://doc.arcgis.com/en/arcgis-online/share-maps/share-items.htm">sharing options</a> to control which members have access to which content. It also has <a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwjDqsLihPr9AhUsAjQIHT2QCKgQFnoECA4QAQ&amp;url=https%3A%2F%2Fwww.esri.com%2Farcgis-blog%2Fproducts%2Farcgis-online%2Fmapping%2Fusing-tags-effectively%2F&amp;usg=AOvVaw2_o433JAXXkcxmujkfq0o5">tags</a> and <a href="https://doc.arcgis.com/en/arcgis-online/reference/content-categories.htm">categories</a> to organize items and make them easier to search and discover.  Sometimes when people say "portal" they mean these content and user management capabilities.</p>
+<p>When you install and configure ArcGIS Server, you get an ArcGIS Server site. This server site turns GIS resources like feature classes and geoprocessing tools into services that can be accessed through a URL. There are different ArcGIS Server <a href="https://enterprise.arcgis.com/en/server/latest/get-started/windows/about-arcgis-server-licensing-roles.htm">licensing roles</a>, that allow you to configure different ArcGIS Server sites for different purposes (e.g. Image Server, GeoEvent Server, etc). ArcGIS Online doesn't have server licensing roles, but it is likewise able to turn GIS resources into services accessed through a URL. Sometimes when people say "server" they mean this ability to publish a resource so that it is accessible from a URL.</p>
+<h2 id="portal-vs-server-web-applications-accessed-by-users">Web applications accessed by users</h2>
+<p>ArcGIS Enterprise and ArcGIS Online both have a web application called the <a href="https://enterprise.arcgis.com/en/portal/latest/administer/windows/about-configuring-the-portal-website.htm">Home app</a>. This is a web page you can go to that allows you to access the capabilities of your ArcGIS Enterprise or ArcGIS Online organization. You click on buttons in this app to perform content and user management tasks. Importantly, the Home app is not the same as the ArcGIS Enterprise or ArcGIS Online organization. It is a user interface for accessing the capabilities provided by those systems. These capabilities are also accessible programatically by the <a href="https://developers.arcgis.com/rest/users-groups-and-items/working-with-users-groups-and-items.htm">Sharing API</a> and would be available even if the Home app did not exist. But sometimes when people say "portal" they mean this Home app interface. </p>
+<p>An ArcGIS Server site also has a web application that allows you to interact with the capabilities of the site. This is called the <a href="https://enterprise.arcgis.com/en/server/latest/get-started/windows/what-s-included-with-arcgis-server.htm#ESRI_SECTION1_91D60600C361477D9810DFB68270AC72">Server Manager app</a>. Similar to the Home app, the Server Manager app is a user interface. The capabilities of the site are also accessible programatically from the <a href="https://developers.arcgis.com/rest/enterprise-administration/server/overview.htm">Server Administration API</a>. Sometimes when people say "server" they mean the Server Manager app.</p>
+<h2 id="portal-vs-server-questions">Questions</h2>
+<ol>
+<li>If somebody says “That item isn’t shared to any groups in the portal”, what do they likely mean by “portal”?</li>
+<li>If somebody says “I installed Server” what do they likely mean by “Server”?</li>
+<li>If somebody says “Go into the portal, click organization, then click members” what do they likely mean by “portal”?</li>
+</ol>
+<h2 id="portal-vs-server-summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>“Portal”</th>
+<th>“Server”</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Unambiguous meaning</strong></td>
+<td>❌</td>
+<td>❌</td>
+</tr>
+<tr>
+<td><strong>Associated software</strong></td>
+<td>Portal for ArcGIS</td>
+<td>ArcGIS Server</td>
+</tr>
+<tr>
+<td><strong>ArcGIS Enterprise configuration</strong></td>
+<td>Enterprise portal</td>
+<td>Depends on licensing role</td>
+</tr>
+<tr>
+<td><strong>ArcGIS Online configuration</strong></td>
+<td>ArcGIS Online portal</td>
+<td>Controlled by Esri</td>
+</tr>
+<tr>
+<td><strong>User management</strong></td>
+<td>✔️</td>
+<td>Limited</td>
+</tr>
+<tr>
+<td><strong>Content management</strong></td>
+<td>✔️</td>
+<td>Limited</td>
+</tr>
+<tr>
+<td><strong>Enables publication of web services</strong></td>
+<td>❌</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td><strong>Interactive access via</strong></td>
+<td>Home app</td>
+<td>Server Manager app*</td>
+</tr>
+<tr>
+<td><strong>Programmatic access via</strong></td>
+<td>Sharing API Server</td>
+<td>Administration API*</td>
+</tr>
+</tbody>
+</table>
+<p>* Not available for ArcGIS Online</p></section><section class="print-page" id="service-vs-layer-item" heading-number="4"><h1 id="service-vs-layer-item-service-vs-layer-item">Service vs. Layer item</h1>
+<p>Sometimes people will use the words "service" and "layer" interchangeably. But they are not the same.</p>
+<h2 id="service-vs-layer-item-service">Service</h2>
+<p>A <a href="https://enterprise.arcgis.com/en/server/latest/publish-services/windows/services-in-arcgis-enterprise.htm">service</a> defines a set of capabilities. What will you be allowed to do with a resource? Will you be able to edit data? Can you upload local data for analysis? Are you allowed to export the data? Any questions about capabilities are answered by the service configuration. In ArcGIS Enterprise, you publish services to an ArcGIS Server site you control. In ArcGIS Online, you publish services to Esri’s servers.</p>
+<p>A service makes these capabilities available via a URL that let you use web protocols to access the resource. These URLs are referred to as <a href="https://developers.arcgis.com/rest/services-reference/enterprise/get-started-with-the-services-directory.htm">REST endpoints</a>. Some services also make resources available through a different standard called SOAP, but this is rarely used. In this workshop, you will work only with REST endpoints.</p>
+<h2 id="service-vs-layer-item-layer-item">Layer item</h2>
+<p>A <a href="https://doc.arcgis.com/en/arcgis-online/manage-data/add-items.htm">layer item</a> references a particular service, but it does not change that service’s capabilities. You can use a layer item to represent the resource with different symbology, popups, or filters than the service’s default representation. Layer items (unlike services) are items in your organization. That menas you can also use a layer item to integrate its associated service into the organization's content management capabilities. In both ArcGIS Online and ArcGIS Enterprise, the typical publishing process involves adding a new layer item to the portal, which automatically creates the associated service for that layer item. </p>
+<p>Because <a href="https://www.esri.com/arcgis-blog/products/arcgis-living-atlas/mapping/give-the-rest-a-rest/">a layer item is not a service</a>, it does not have its own REST endpoint. Instead, it has a unique <a href="https://developers.arcgis.com/documentation/glossary/item-id/">Item ID</a> and it references the REST endpoint of the underlying service. One important implication of the fact that a layer item sits on top of a service is that there might be multiple layer items that all reference the same service. A second implication is that you can create layer items for any service whose REST endpoint you can access, even if that service exists outside your organization.</p>
+<h2 id="service-vs-layer-item-exercise-publish-a-service-10-minutes">Exercise: Publish a service (10 minutes)</h2>
+<ol>
+<li>Log into ArcGIS Online with the workshop credentials you have</li>
+<li>In the Home app, click the Content tab</li>
+<li>Click the New item button, then click Your device</li>
+<li>Navigate to the location where you downloaded the Rain Gauge Sites shapefile</li>
+<li>Select the .zip archive then click Open</li>
+<li>Select the default option to add the file and create a hosted feature layer</li>
+<li>Title the item RainGaugeSites_&lt;your initials&gt;, then click Save</li>
+<li>On the item details page, note the item ID in the URL (it is a 32 character hexadecimal value) </li>
+<li>Change the sharing options to share this item with everyone</li>
+<li>At the bottom of the Overview, copy the URL. This URL is the REST endpoint of the service associated with the item.</li>
+<li>Navigate back to the Content tab so you can see all the items owned by your username</li>
+<li>In an incognito browser window, navigate to the URL you copied, then click the link to the RainGaugeSites layer</li>
+<li>Scroll to the bottom of the page and review the supported operations</li>
+<li>Answer these questions:<ol>
+<li>What is the Item ID of the first layer item you created?</li>
+<li>How many new content items were created? </li>
+<li>How many of them were layer items?</li>
+<li>What is the URL of the REST endpoint for the service you published?</li>
+<li>Why is the REST endpoint accessible without logging in?</li>
+<li>Among the supported operations for the layer, which editing capabilities are supported? </li>
+</ol>
+</li>
+</ol>
+<h2 id="service-vs-layer-item-summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Service</th>
+<th>Layer Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Define what can be done with a resource</td>
+<td>✔️</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>REST endpoint</td>
+<td>✔️</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Representation of data</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>Specify users who can access</td>
+<td>❌</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>Tags/Categories</td>
+<td>❌</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>Item ID</td>
+<td>❌</td>
+<td>✔️</td>
+</tr>
+</tbody>
+</table></section><section class="print-page" id="layer-item-vs-layer" heading-number="5"><h1 id="layer-item-vs-layer-layer-item-vs-layer">Layer item vs. Layer</h1>
+<p>When publishing a service, it is possible to include multiple layers into that single service. That service will have a single configuration that applies to all the layers. The service will be referenced in the portal by a layer item. A single layer item might therefore reference multiple individual layers.</p>
+<p>Confusingly, people sometimes say “layer” when they mean “layer item”. If somebody says "layer" it can be hard to know if they mean a layer item or a layer contained within that layer item. Layers are also called sublayers to help differentiate them from the layer item they are contained within. To understand the difference, you can think of a layer item like a group layer in ArcGIS Pro. In fact, if you add a layer item to ArcGIS Pro, it will come into the map as a group layer that includes all the sublayers in that layer item.  </p>
+<p>Sublayers do not have their own Item ID, and you do not manage access to them individually. Sharing, tags, and categories are a property of the layer item, and apply equally to all the sublayers within it. You do have control over the representation of individual sublayers by separately configuring their symbology, filters, and popups.</p>
+<p>Even though sublayers do not have an Item ID in the portal, they do have a unique Layer ID. This Layer ID allows each sublayer to reference its own unique REST endpoint, with the Layer ID at the end of the general service URL. This unique REST endpoint means that sublayers can be added individually to a map, separate from other sublayers in the same layer item. If the Layer ID for a sublayer ever changes, maps and apps that reference the sublayer’s previous URL will break. For that reason, it is extremely important to maintain Layer ID stability. This is why you must <a href="https://pro.arcgis.com/en/pro-app/latest/help/sharing/overview/assign-layer-ids.htm">allow assignment of unique numeric IDs</a> in an ArcGIS Pro map before publishing layers from that map.</p>
+<h2 id="layer-item-vs-layer-exercise-investigate-a-layer-5-minutes">Exercise: Investigate a layer (5 minutes)</h2>
+<ol>
+<li>Open the Item Details page for the RainGaugeSites item you created earlier</li>
+<li>Click on the first layer in the Layers section</li>
+<li>Copy the URL for the REST endpoint of this layer and paste it into a private/incognito browser tab</li>
+<li>Answer these questions:<ol>
+<li>How many sublayers does this layer item have?</li>
+<li>How does the REST endpoint URL referenced by the first sublayer compare to the REST endpoint referenced by layer item that contains the sublayer?</li>
+<li>What is the Layer ID of the first sublayer?</li>
+<li>How would you prevent people from viewing the first sublayer without logging in?</li>
+</ol>
+</li>
+</ol>
+<h2 id="layer-item-vs-layer-summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Layer item</th>
+<th>Layer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Item ID</td>
+<td>✔️</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Layer ID</td>
+<td>❌</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>References a unique REST endpoint URL</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>Sometimes called a layer</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>Sometimes called a sublayer</td>
+<td>❌</td>
+<td>✔️</td>
+</tr>
+</tbody>
+</table></section><section class="print-page" id="map-service-vs-feature-service" heading-number="6"><h1 id="map-service-vs-feature-service-map-service-vs-feature-service">Map service vs Feature service</h1>
+<p>There are different kinds of services. Most of these differences are based on the type of resource the service makes available. For example, <a href="https://enterprise.arcgis.com/en/server/latest/publish-services/windows/what-is-a-geoprocessing-service.htm">geoprocessing services</a> enable server-side analysis and <a href="https://enterprise.arcgis.com/en/server/latest/publish-services/windows/printing-in-web-applications.htm">print services</a> enable creation of printable files.</p>
+<p><a href="https://enterprise.arcgis.com/en/server/latest/publish-services/windows/what-is-a-map-service.htm">Map services</a> and <a href="https://enterprise.arcgis.com/en/server/latest/publish-services/windows/what-is-a-feature-service-.htm">feature services</a> both provide a REST endpoint for accessing feature data. For both types of services, that endpoint can be used to query the data, access the attribute table, and as an input for analysis tools. But these two types of services provide those capabilities in different ways that are useful for different purposes.</p>
+<h2 id="map-service-vs-feature-service-response-differences">Response differences</h2>
+<p>A map service will have a REST endpoint that ends with MapServer. When a client sends a request to this URL, the service responds by sending a rendered image of the data. A feature service, by contrast, will have a REST endpoint that ends with FeatureServer. When a client sends a request to this URL, the service responds by sending the spatial reference, vertex coordinates, and geometry type of the features. The client then renders the geometry.</p>
+<p>An image of the data is typically a smaller file size than the geometries themselves. Compared to a feature service, a map service consumes less network bandwidth and is more easily rendered by low-powered client applications. Sending an image of the data also means map services can include both vector and raster data. The advantage of a feature service, on the other hand, is that access to the geometries enables editing of the features. Feature services can also reduce CPU usage by the server by offloading feature rendering to the client.</p>
+<h2 id="map-service-vs-feature-service-content-item-differences">Content item differences</h2>
+<p>Because map and feature services are different kinds of services, they are associated with different types of layer items in the organization. A map service is referenced by a <a href="https://enterprise.arcgis.com/en/portal/latest/use/map-image-elevation-imagery-layers.htm#ESRI_SECTION1_E2CAA2B7A0394D75AF58759CC1D070EA">map image layer</a>, while a feature service is referenced by <a href="https://enterprise.arcgis.com/en/portal/latest/use/feature-layers.htm">feature layer</a>.</p>
+<h2 id="map-service-vs-feature-service-exercise-add-external-services-to-the-portal-10-minutes">Exercise: Add external services to the portal (10 minutes)</h2>
+<ol>
+<li>Open <a href="https://arcgis.metc.state.mn.us/server/rest/services/ESWastewater/RainGaugeSitesPublic/MapServer" target="_blank">this link</a> (opens in new tab)</li>
+<li>From the Supported Operations at the bottom of the page, click Export Map</li>
+<li>For format, select JSON, then click Export Map Image (GET)</li>
+<li>Copy the URL listed in the href property and navigate to that page</li>
+<li>In the ArcGIS Online Home app, on the Content tab, click New item</li>
+<li>Click URL, paste the first URL into the URL box, then click Next</li>
+<li>Type RainGaugeSites1_&lt;your initials&gt; for the title, then click Save</li>
+<li>Open <a href="https://arcgis.metc.state.mn.us/server/rest/services/ESWastewater/RainGaugeSitesPublic/FeatureServer" target="_blank">this link</a> (opens in new tab)</li>
+<li>From the Supported Operations at the bottom of the page, Click Query</li>
+<li>For Layer Definitions, copy and paste this value: <code>[{"layerId": 0, "where": "1=1", "outFields": "SiteName"}]</code></li>
+<li>For format, select JSON, then click Query (GET)</li>
+<li>Copy the URL for the page with this query response.</li>
+<li>Repeat the process for adding this URL as an content item to ArcGIS Online, titling the item RainGaugeSites2_&lt;your initials&gt;</li>
+<li>Answer these questions:<ol>
+<li>What kind of service is the first REST endpoint?</li>
+<li>How can you be sure of the type of service a REST endpoint provides access for?</li>
+<li>Is Export Map a supported operation for the second REST endpoint?</li>
+<li>How did the Export Map response on the first service differ from the Query response on the second service?</li>
+<li>What kind of layer item was created when you added the first URL?</li>
+<li>What kind of layer item was created when you added the second URL?</li>
+</ol>
+</li>
+</ol>
+<h2 id="map-service-vs-feature-service-summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Map Service</th>
+<th>Feature Service</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Analyzable*</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>Queryable*</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>Attribute table access*</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>Enables editing*</td>
+<td>❌</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>Geometry rendered by</td>
+<td>Server</td>
+<td>Client</td>
+</tr>
+<tr>
+<td>REST endpoint</td>
+<td>MapServer</td>
+<td>FeatureServer</td>
+</tr>
+<tr>
+<td>File transfer size</td>
+<td>Generally smaller</td>
+<td>Generally larger</td>
+</tr>
+<tr>
+<td>Associated portal item</td>
+<td>Map image layer</td>
+<td>Feature layer</td>
+</tr>
+</tbody>
+</table>
+<p>* If enabled as a capability of the service</p></section><section class="print-page" id="cached-vs-dynamic" heading-number="7"><h1 id="cached-vs-dynamic-cached-vs-dynamic-map-service">Cached vs. Dynamic map service</h1>
+<p>Because a map service responds to visualization requests with an image of the features, it needs to generate that image server-side. A dynamic map service draws this image every time it receives a request. A <a href="https://enterprise.arcgis.com/en/server/latest/publish-services/windows/what-is-map-caching-.htm">cached map service</a>, on the other hand, means that images are generated and saved ahead of time. Requests on a cached map service receive this saved image.</p>
+<h2 id="cached-vs-dynamic-draw-time-differences">Draw time differences</h2>
+<p>Drawing the image takes time, so a dynamic map service will be slower than a cached map service to respond to requests. But creating the cached map service in the first place is generally much slower, because every image in the cache is typically created up front. </p>
+<h2 id="cached-vs-dynamic-data-update-differences">Data update differences</h2>
+<p>Because a cached map service sends a saved image for every request, it may not reflect the most recent data. The cache would need to be recreated for the image to update. Dynamic map services, however, will always show the most recent edits to the data. For that reason, cached map services are typically best if the data are rarely updated, while dynamic map services are typically best for data that are frequently updated.</p>
+<h2 id="cached-vs-dynamic-questions">Questions</h2>
+<ol>
+<li>If you have a map service of parcels that are updated quarterly and is used as a basemap by many different users, should that service be cached?</li>
+<li>If you have a feature service that is edited annually, should that service be cached?</li>
+</ol>
+<h2 id="cached-vs-dynamic-summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Cached Map Service</th>
+<th>Dynamic Map Service</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Geometry drawn</td>
+<td>On cache creation</td>
+<td>On every request</td>
+</tr>
+<tr>
+<td>Service creation</td>
+<td>Slower</td>
+<td>Faster</td>
+</tr>
+<tr>
+<td>Service response time</td>
+<td>Faster</td>
+<td>Slower</td>
+</tr>
+<tr>
+<td>Reflects most recent edits</td>
+<td>❌</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>Best for data that</td>
+<td>Rarely change</td>
+<td>Often change</td>
+</tr>
+</tbody>
+</table></section><section class="print-page" id="hosted-vs-instance" heading-number="8"><h1 id="hosted-vs-instance-hosted-vs-instance-based-service">Hosted vs. instance-based service</h1>
+<p>For map and feature services, there are two different technologies that enable turning feature classes on disk into services accessible from a REST endpoint. </p>
+<h2 id="hosted-vs-instance-hosted-services">Hosted services</h2>
+<p>Feature services published to ArcGIS Online are considered “hosted”. This phrasing means more than just saying that ArcGIS Online generically serves as a host for data and services. It refers to a particular technology that makes resources available as web services. This technology provides only limited control over the service configuration and requires that the underlying data be copied to a specially optimized ArcGIS-managed data store.</p>
+<p>You can also publish hosted services to ArcGIS Enterprise because you can create your own ArcGIS-managed data stores. </p>
+<table>
+<thead>
+<tr>
+<th>Hosted service type</th>
+<th>Data store</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hosted feature service</td>
+<td>Relational or spatiotemporal big data store</td>
+</tr>
+<tr>
+<td>Hosted image service</td>
+<td>Raster store</td>
+</tr>
+<tr>
+<td>Hosted 3D scene service</td>
+<td>Tile cache (before version 11.4) or object store (11.4 and later)</td>
+</tr>
+<tr>
+<td>Hosted vector tile service</td>
+<td>Hosting server file system</td>
+</tr>
+</tbody>
+</table>
+<p>When you publish a hosted service to ArcGIS Enterprise, the data must be copied into one of these specialized data stores.</p>
+<p>The main benefit of a hosted service is that it is very memory efficient. You can have many hosted services for a small memory footprint. Hosted services are also automatically tuned and optimized by the ArcGIS system. For that reason, there isn't much you can configure for hosted services.</p>
+<h2 id="hosted-vs-instance-instance-based-services">Instance-based services</h2>
+<p>ArcGIS Enterprise also supports a second type of service based on the same technology that powers ArcGIS Pro. These types of services go by several different names, depending on who you ask:</p>
+<ul>
+<li>By-reference (or by-ref) service</li>
+<li>Non-hosted service</li>
+<li>ArcGIS Server service</li>
+<li>ArcObjects service</li>
+<li>ArcSOC (or SOC) service</li>
+</ul>
+<p>Because the settings for these services largely depends on what Server Manager calls intances, this workshop will refer to them as instance-based services.</p>
+<p>The most important implication of using instance-based services is that they do not need to reference data in a specially-optimized ArcGIS-managed storage location. The data might be stored in a variety of supported databases, network shares, cloud store, or local file directories. This flexibility is only available in ArcGIS Enterprise. ArcGIS Online does not support instance-based services.</p>
+<p>One benefit of an instance-based service comes from using a data store that you have full control over. With instance-based services there is no need to copy data, and you can take advantage of the capabilities of user-managed data stores that ArcGIS-managed data stores do not have (like versioning, topology, or direct SQL access). Another advantage is that you also get substantially more control over the precise service configuration than you do with hosted services.</p>
+<h2 id="hosted-vs-instance-questions">Questions</h2>
+<ol>
+<li>An organization wants to expand the number of people who can publish services but is concerned about the using too much memory on the ArcGIS Server machine. Which type of service will minimize the memory footprint of services?</li>
+<li>A gas utility needs to make sure that the geometry of their features adheres to defined spatial relationships (for example, no overlaps in pipeline features). Which type of service enables topology rules?</li>
+</ol>
+<h2 id="hosted-vs-instance-summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Hosted service</th>
+<th>By-reference service</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Data</strong></td>
+<td>ArcGIS-managed</td>
+<td>User-managed</td>
+</tr>
+<tr>
+<td><strong>Service configuration options</strong></td>
+<td>Few</td>
+<td>Many</td>
+</tr>
+<tr>
+<td><strong>RAM usage</strong></td>
+<td>Much less</td>
+<td>Much more</td>
+</tr>
+<tr>
+<td><strong>Corresponding layer item</strong></td>
+<td>Specifies “(hosted)”</td>
+<td>No additional specification</td>
+</tr>
+<tr>
+<td><strong>Publish to ArcGIS Online</strong></td>
+<td>✔️</td>
+<td>❌</td>
+</tr>
+<tr>
+<td><strong>Publish to ArcGIS Enterprise</strong></td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>ArcGIS-managed data</th>
+<th>User-managed data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Storage technology</strong></td>
+<td>Chosen by Esri</td>
+<td>Chosen by user</td>
+</tr>
+<tr>
+<td><strong>Backups/Updates</strong></td>
+<td>Managed by user</td>
+<td>Managed by user</td>
+</tr>
+<tr>
+<td><strong>Versioning/Archiving</strong></td>
+<td>❌</td>
+<td>If supported by database</td>
+</tr>
+<tr>
+<td><strong>Topology</strong></td>
+<td>❌</td>
+<td>If supported by database</td>
+</tr>
+<tr>
+<td><strong>Direct SQL Access</strong></td>
+<td>❌</td>
+<td>If supported by database</td>
+</tr>
+</tbody>
+</table></section><section class="print-page" id="check-your-own-services" heading-number="9"><h1 id="check-your-own-services-check-your-own-services">Check your own services</h1>
+<ol>
+<li>Log on to your organization's ArcGIS Online or ArcGIS Enterprise portal</li>
+<li>For one of the layer items in the portal find the answers to the following questions:<ol>
+<li>What type of item is it?</li>
+<li>What is its item ID?</li>
+<li>What is the REST endpoint URL of the service for this item?</li>
+<li>Is this service a Map Service, a Feature Service, or something else?</li>
+<li>If it is a Map Service running on an ArcGIS Server site, open Server Manager and determine if it's cached or dynamic.</li>
+<li>If it is a non-hosted Feature Layer, what user-managed data store does it reference?</li>
+</ol>
+</li>
+<li>Repeat for other layer items as time (and your patience) allow</li>
+</ol></section><section class="print-page" id="answers" heading-number="10"><h1 id="answers-answers">Answers</h1>
+<h2 id="answers-client-vs-server">Client vs. Server</h2>
+<ol>
+<li>What was the resource that was requested when you clicked Download? <strong>The .zip archive file</strong></li>
+<li>Which application was the client that sent the request? <strong>My browser</strong></li>
+<li>Which application was the server that sent the resource? <strong>Minnesota Geospatial Commons</strong></li>
+</ol>
+<h2 id="answers-portal-vs-server">“Portal” vs. “Server”</h2>
+<ol>
+<li>If somebody says “That item isn’t shared to any groups in the portal”, what do they likely mean by “portal”? <strong>Content management capabilities provided by the Portal for ArcGIS software or ArcGIS Online service</strong></li>
+<li>If somebody says “I installed Server” what do they likely mean by “Server”? <strong>The ArcGIS Server software</strong></li>
+<li>If somebody says “Go into the portal, click organization, then click members.” what do they likely mean by “portal”? <strong>The Home app</strong></li>
+</ol>
+<h2 id="answers-service-vs-layer-item">Service vs. Layer item</h2>
+<ol>
+<li>What is the Item ID of the first layer item you created? <strong>Values will vary, but it should be a 32-character alphanumeric string</strong></li>
+<li>How many new content items were created? <strong>2</strong></li>
+<li>How many of them were layer items? <strong>1</strong></li>
+<li>What is the URL of the REST endpoint for the service you published? <strong>Values will vary, but it should end <code>/FeatureServer</code></strong></li>
+<li>Why is the REST endpoint of the service accessible without logging in? <strong>Because the sharing level on the associated layer item was set to Everyone.</strong></li>
+<li>Among the supported operations for the layer, which editing capabilities are supported? <strong>None</strong></li>
+</ol>
+<h2 id="answers-layer-item-vs-layer">Layer item vs. Layer</h2>
+<ol>
+<li>How many layers does this sublayer item have? <strong>1</strong></li>
+<li>How does the REST endpoint URL referenced by the first sublayer compare to the REST endpoint referenced by layer item that contains the sublayer? <strong>It is similar, but with a /0 at the end indicating the Layer ID</strong></li>
+<li>What is the Layer ID of the first sublayer? <strong>0, which matches the value in the URL.</strong></li>
+<li>How would you prevent people from viewing the first sublayer without logging in? <strong>Change the sharing settings on the layer item the layer is contained in. All sublayers for a layer item will have the same sharing properties.</strong></li>
+</ol>
+<h2 id="answers-map-service-vs-feature-service">Map service vs. Feature service</h2>
+<ol>
+<li>What kind of service is the first REST endpoint? <strong>Map Service</strong></li>
+<li>How can you be sure of the type of service a REST endpoint provides access for? <strong>Because the URL ends with MapServer</strong></li>
+<li>Is Export Map a supported operation for the second REST endpoint?</li>
+<li>How did the Export Map response on the first service differ from the Query response on the second service? <strong>Export map on a Map Service returned an image. Query on a Feature Service returned feature geometry</strong></li>
+<li>What kind of layer item was created when you added the first URL? <strong>Map Image Layer, which matches the fact that the URL is for a map service.</strong></li>
+<li>What kind of layer item was created when you added the second URL? <strong>Feature Layer, which matches the fact that the URL is for a feature service.</strong></li>
+</ol>
+<h2 id="answers-cached-vs-dynamic-map-service">Cached vs. Dynamic map service</h2>
+<ol>
+<li>If you have a map service of parcels that are updated quarterly and is used as a basemap by many different users, should that service be cached? <strong>Yes. Quarterly updates to the underlying data mean infrequent cache rebuilding. Large number of users means it is a good idea to minimize the server resources used to respond to requests.</strong></li>
+<li>If you have a feature service that is edited annually, should that service be cached? <strong>No. Service caching only applies to map services because the image of the data can be pregenerated. The feature geometry of a feature service cannot be cached in the same way. You can get a similar effect by publishing vector tile services or using query response caching for hosted feature layers, but the idea of "cached" vs "dynamic" only applies to map services.</strong></li>
+</ol>
+<h2 id="answers-hosted-vs-instance-based-service">Hosted vs. Instance-based service</h2>
+<ol>
+<li>An organization wants to expand the number of people who can publish services but is concerned about the additional load on the ArcGIS Server machine. Should they train these new publishers to create hosted services or instance-based services to minimize server machine load? <strong>Hosted. Instance-based services require more memory.</strong></li>
+<li>A gas utility needs to make sure that the geometry of their features adheres to defined spatial relationships (for example, no overlaps in pipeline features). Should they use an ArcGIS-managed or user-managed datastore for these features? <strong>User-managed. ArcGIS-managed datastores cannot use topology rules to validate feature geometry.</strong> </li>
+</ol></section><section class="print-page" id="resources" heading-number="11"><h1 id="resources-resources">Resources</h1>
+<h2 id="resources-client-vs-server">Client vs. Server</h2>
+<ul>
+<li><a href="https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview">ArcGIS Pro | 2D, 3D &amp; 4D GIS Mapping Software</a></li>
+<li><a href="https://www.esri.com/en-us/landing-page/product/2019/arcgis-online/overview">ArcGIS Online | Cloud-Based GIS Mapping Software Solution</a></li>
+<li><a href="https://www.esri.com/en-us/arcgis/products/arcgis-enterprise/overview">ArcGIS Enterprise | Enterprise GIS System - Geospatial Platform</a></li>
+</ul>
+<h2 id="resources-portal-vs-server">“Portal” vs. “Server”</h2>
+<ul>
+<li><a href="https://enterprise.arcgis.com/en/portal/latest/install/windows/welcome-to-the-portal-for-arcgis-installation-guide.htm">Portal for ArcGIS installation guide—ArcGIS Enterprise</a></li>
+<li><a href="https://enterprise.arcgis.com/en/portal/latest/administer/windows/what-is-portal-for-arcgis-.htm">What is the ArcGIS Enterprise portal?—Portal for ArcGIS</a></li>
+<li><a href="https://doc.arcgis.com/en/arcgis-online/administer/user-types-orgs.htm">User types—ArcGIS Online Help</a></li>
+<li><a href="https://doc.arcgis.com/en/arcgis-online/administer/member-roles.htm">Member roles—ArcGIS Online Help</a></li>
+<li><a href="https://doc.arcgis.com/en/arcgis-online/share-maps/share-items.htm">Share items—ArcGIS Online Help</a></li>
+<li><a href="https://www.esri.com/arcgis-blog/products/arcgis-online/mapping/using-tags-effectively/">Use Tags Effectively</a></li>
+<li><a href="https://doc.arcgis.com/en/arcgis-online/reference/content-categories.htm">Content categories—ArcGIS Online Help</a></li>
+<li><a href="https://enterprise.arcgis.com/en/server/latest/install/windows/welcome-to-the-arcgis-for-server-install-guide.htm">ArcGIS Server installation guide—ArcGIS Enterprise</a></li>
+<li><a href="https://enterprise.arcgis.com/en/server/latest/get-started/windows/about-arcgis-server-licensing-roles.htm">ArcGIS Server licensing roles—ArcGIS Server</a></li>
+<li><a href="https://enterprise.arcgis.com/en/portal/latest/administer/windows/about-configuring-the-portal-website.htm">Configuring the portal website—Portal for ArcGIS </a></li>
+<li><a href="https://developers.arcgis.com/rest/users-groups-and-items/working-with-users-groups-and-items.htm">Sharing API—ArcGIS REST APIs</a></li>
+<li><a href="https://enterprise.arcgis.com/en/server/latest/get-started/windows/what-s-included-with-arcgis-server.htm#ESRI_SECTION1_91D60600C361477D9810DFB68270AC72">ArcGIS Server Manager—ArcGIS Server</a></li>
+<li><a href="https://developers.arcgis.com/rest/enterprise-administration/server/overview.htm">Server Administration API—ArcGIS REST APIs</a></li>
+</ul>
+<h2 id="resources-service-vs-layer-item">Service vs. Layer item</h2>
+<ul>
+<li><a href="https://enterprise.arcgis.com/en/server/latest/publish-services/windows/services-in-arcgis-enterprise.htm">Services in ArcGIS Enterprise—ArcGIS Server</a></li>
+<li><a href="https://developers.arcgis.com/rest/services-reference/enterprise/get-started-with-the-services-directory.htm">REST endpoint URLs—ArcGIS REST APIs</a></li>
+<li><a href="https://doc.arcgis.com/en/arcgis-online/manage-data/add-items.htm">Items in ArcGIS Online—ArcGIS Online Help</a></li>
+<li><a href="https://www.esri.com/arcgis-blog/products/arcgis-living-atlas/mapping/give-the-rest-a-rest/">Give the REST a Rest</a></li>
+<li><a href="https://developers.arcgis.com/documentation/glossary/item-id/">item ID</a></li>
+</ul>
+<h2 id="resources-layer-item-vs-layer">Layer item vs. Layer</h2>
+<ul>
+<li><a href="https://pro.arcgis.com/en/pro-app/latest/help/sharing/overview/assign-layer-ids.htm">Assign layer IDs—ArcGIS Pro</a></li>
+</ul>
+<h2 id="resources-map-services-vs-feature-services">Map services vs. Feature services</h2>
+<ul>
+<li><a href="https://enterprise.arcgis.com/en/server/latest/publish-services/windows/what-is-a-geoprocessing-service.htm">Geoprocessing services—ArcGIS Server</a></li>
+<li><a href="https://enterprise.arcgis.com/en/server/latest/publish-services/windows/printing-in-web-applications.htm">Printing in web applications—ArcGIS Server</a></li>
+<li><a href="https://enterprise.arcgis.com/en/server/latest/publish-services/windows/what-is-a-map-service.htm">Map service—ArcGIS Server</a></li>
+<li><a href="https://enterprise.arcgis.com/en/server/latest/publish-services/windows/what-is-a-feature-service-.htm">Feature services—ArcGIS Server</a></li>
+<li><a href="https://enterprise.arcgis.com/en/portal/latest/use/map-image-elevation-imagery-layers.htm#ESRI_SECTION1_E2CAA2B7A0394D75AF58759CC1D070EA">Map image layers—Portal for ArcGIS</a></li>
+<li><a href="https://enterprise.arcgis.com/en/portal/latest/use/feature-layers.htm">Feature layers—Portal for ArcGIS</a></li>
+</ul>
+<h2 id="resources-cached-map-services-vs-dynamic-map-services">Cached map services vs. Dynamic map services</h2>
+<ul>
+<li><a href="https://enterprise.arcgis.com/en/server/latest/publish-services/windows/what-is-map-caching-.htm">What is map caching?—ArcGIS Server</a></li>
+</ul>
+<h2 id="resources-hosted-services-vs-instance-based-services">Hosted services vs. Instance-based services</h2>
+<ul>
+<li><a href="https://doc.arcgis.com/en/arcgis-online/manage-data/publish-features.htm">Publish hosted feature layers—ArcGIS Online Help</a></li>
+<li><a href="https://enterprise.arcgis.com/en/data-store/latest/install/windows/what-is-arcgis-data-store.htm">What is ArcGIS Data Store?—ArcGIS Enterprise</a></li>
+<li><a href="https://enterprise.arcgis.com/en/portal/latest/use/data-publishing-and-enterprise.htm#ESRI_SECTION1_2CF57CE5A9E84F07A16946F538BAD049">Register data stores—Portal for ArcGIS</a></li>
+</ul></section></div><style>.print-site-enumerate-headings #index > h1:before { content: '1 ' }
+
+                .print-site-enumerate-headings #index h2:before { content: '1.' counter(counter-index-2) ' ' }
+                .print-site-enumerate-headings #index h2 {  counter-reset: counter-index-3 ;  counter-increment: counter-index-2 }
+            
+                .print-site-enumerate-headings #index h3:before { content: '1.' counter(counter-index-2) '.' counter(counter-index-3) ' ' }
+                .print-site-enumerate-headings #index h3 {  counter-increment: counter-index-3 }
+            
+.print-site-enumerate-headings #client-vs-server > h1:before { content: '2 ' }
+
+                .print-site-enumerate-headings #client-vs-server h2:before { content: '2.' counter(counter-client-vs-server-2) ' ' }
+                .print-site-enumerate-headings #client-vs-server h2 {  counter-reset: counter-client-vs-server-3 ;  counter-increment: counter-client-vs-server-2 }
+            
+                .print-site-enumerate-headings #client-vs-server h3:before { content: '2.' counter(counter-client-vs-server-2) '.' counter(counter-client-vs-server-3) ' ' }
+                .print-site-enumerate-headings #client-vs-server h3 {  counter-increment: counter-client-vs-server-3 }
+            
+.print-site-enumerate-headings #portal-vs-server > h1:before { content: '3 ' }
+
+                .print-site-enumerate-headings #portal-vs-server h2:before { content: '3.' counter(counter-portal-vs-server-2) ' ' }
+                .print-site-enumerate-headings #portal-vs-server h2 {  counter-reset: counter-portal-vs-server-3 ;  counter-increment: counter-portal-vs-server-2 }
+            
+                .print-site-enumerate-headings #portal-vs-server h3:before { content: '3.' counter(counter-portal-vs-server-2) '.' counter(counter-portal-vs-server-3) ' ' }
+                .print-site-enumerate-headings #portal-vs-server h3 {  counter-increment: counter-portal-vs-server-3 }
+            
+.print-site-enumerate-headings #service-vs-layer-item > h1:before { content: '4 ' }
+
+                .print-site-enumerate-headings #service-vs-layer-item h2:before { content: '4.' counter(counter-service-vs-layer-item-2) ' ' }
+                .print-site-enumerate-headings #service-vs-layer-item h2 {  counter-reset: counter-service-vs-layer-item-3 ;  counter-increment: counter-service-vs-layer-item-2 }
+            
+                .print-site-enumerate-headings #service-vs-layer-item h3:before { content: '4.' counter(counter-service-vs-layer-item-2) '.' counter(counter-service-vs-layer-item-3) ' ' }
+                .print-site-enumerate-headings #service-vs-layer-item h3 {  counter-increment: counter-service-vs-layer-item-3 }
+            
+.print-site-enumerate-headings #layer-item-vs-layer > h1:before { content: '5 ' }
+
+                .print-site-enumerate-headings #layer-item-vs-layer h2:before { content: '5.' counter(counter-layer-item-vs-layer-2) ' ' }
+                .print-site-enumerate-headings #layer-item-vs-layer h2 {  counter-reset: counter-layer-item-vs-layer-3 ;  counter-increment: counter-layer-item-vs-layer-2 }
+            
+                .print-site-enumerate-headings #layer-item-vs-layer h3:before { content: '5.' counter(counter-layer-item-vs-layer-2) '.' counter(counter-layer-item-vs-layer-3) ' ' }
+                .print-site-enumerate-headings #layer-item-vs-layer h3 {  counter-increment: counter-layer-item-vs-layer-3 }
+            
+.print-site-enumerate-headings #map-service-vs-feature-service > h1:before { content: '6 ' }
+
+                .print-site-enumerate-headings #map-service-vs-feature-service h2:before { content: '6.' counter(counter-map-service-vs-feature-service-2) ' ' }
+                .print-site-enumerate-headings #map-service-vs-feature-service h2 {  counter-reset: counter-map-service-vs-feature-service-3 ;  counter-increment: counter-map-service-vs-feature-service-2 }
+            
+                .print-site-enumerate-headings #map-service-vs-feature-service h3:before { content: '6.' counter(counter-map-service-vs-feature-service-2) '.' counter(counter-map-service-vs-feature-service-3) ' ' }
+                .print-site-enumerate-headings #map-service-vs-feature-service h3 {  counter-increment: counter-map-service-vs-feature-service-3 }
+            
+.print-site-enumerate-headings #cached-vs-dynamic > h1:before { content: '7 ' }
+
+                .print-site-enumerate-headings #cached-vs-dynamic h2:before { content: '7.' counter(counter-cached-vs-dynamic-2) ' ' }
+                .print-site-enumerate-headings #cached-vs-dynamic h2 {  counter-reset: counter-cached-vs-dynamic-3 ;  counter-increment: counter-cached-vs-dynamic-2 }
+            
+                .print-site-enumerate-headings #cached-vs-dynamic h3:before { content: '7.' counter(counter-cached-vs-dynamic-2) '.' counter(counter-cached-vs-dynamic-3) ' ' }
+                .print-site-enumerate-headings #cached-vs-dynamic h3 {  counter-increment: counter-cached-vs-dynamic-3 }
+            
+.print-site-enumerate-headings #hosted-vs-instance > h1:before { content: '8 ' }
+
+                .print-site-enumerate-headings #hosted-vs-instance h2:before { content: '8.' counter(counter-hosted-vs-instance-2) ' ' }
+                .print-site-enumerate-headings #hosted-vs-instance h2 {  counter-reset: counter-hosted-vs-instance-3 ;  counter-increment: counter-hosted-vs-instance-2 }
+            
+                .print-site-enumerate-headings #hosted-vs-instance h3:before { content: '8.' counter(counter-hosted-vs-instance-2) '.' counter(counter-hosted-vs-instance-3) ' ' }
+                .print-site-enumerate-headings #hosted-vs-instance h3 {  counter-increment: counter-hosted-vs-instance-3 }
+            
+.print-site-enumerate-headings #check-your-own-services > h1:before { content: '9 ' }
+
+                .print-site-enumerate-headings #check-your-own-services h2:before { content: '9.' counter(counter-check-your-own-services-2) ' ' }
+                .print-site-enumerate-headings #check-your-own-services h2 {  counter-reset: counter-check-your-own-services-3 ;  counter-increment: counter-check-your-own-services-2 }
+            
+                .print-site-enumerate-headings #check-your-own-services h3:before { content: '9.' counter(counter-check-your-own-services-2) '.' counter(counter-check-your-own-services-3) ' ' }
+                .print-site-enumerate-headings #check-your-own-services h3 {  counter-increment: counter-check-your-own-services-3 }
+            
+.print-site-enumerate-headings #answers > h1:before { content: '10 ' }
+
+                .print-site-enumerate-headings #answers h2:before { content: '10.' counter(counter-answers-2) ' ' }
+                .print-site-enumerate-headings #answers h2 {  counter-reset: counter-answers-3 ;  counter-increment: counter-answers-2 }
+            
+                .print-site-enumerate-headings #answers h3:before { content: '10.' counter(counter-answers-2) '.' counter(counter-answers-3) ' ' }
+                .print-site-enumerate-headings #answers h3 {  counter-increment: counter-answers-3 }
+            
+.print-site-enumerate-headings #resources > h1:before { content: '11 ' }
+
+                .print-site-enumerate-headings #resources h2:before { content: '11.' counter(counter-resources-2) ' ' }
+                .print-site-enumerate-headings #resources h2 {  counter-reset: counter-resources-3 ;  counter-increment: counter-resources-2 }
+            
+                .print-site-enumerate-headings #resources h3:before { content: '11.' counter(counter-resources-2) '.' counter(counter-resources-3) ' ' }
+                .print-site-enumerate-headings #resources h3 {  counter-increment: counter-resources-3 }
+            </style>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2024 <a href="https://github.com/travisormsby" target"_blank" rel="noopener">Travis Ormsby</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/travisormsby" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/travis-ormsby/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "/", "features": ["navigation.sections", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+        <script src="../js/print-site.js"></script>
+      
+    
+  </body>
+</html>
