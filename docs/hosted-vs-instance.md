@@ -9,10 +9,10 @@ You can also publish hosted services to ArcGIS Enterprise because you can create
 
 |Hosted service type|Data store|
 |---|---|
-|Hosted feature service|Relational and spatiotemporal big data store|
+|Hosted feature service|Relational or spatiotemporal big data store|
 |Hosted image service|Raster store|
 |Hosted 3D scene service|Tile cache (before version 11.4) or object store (11.4 and later)|
-|Hosted vector tile service|ArcGIS Server machine file system|
+|Hosted vector tile service|Hosting server file system|
 
 When you publish a hosted service to ArcGIS Enterprise, the data must be copied into one of these specialized data stores.
 
@@ -27,9 +27,9 @@ ArcGIS Enterprise also supports a second type of service based on the same techn
 - ArcObjects service
 - ArcSOC (or SOC) service
 
-Because the settings for these services largely depends on what Server Manager refers to as intances, this workshop will refer to them as instance-based services.
+Because the settings for these services largely depends on what Server Manager calls intances, this workshop will refer to them as instance-based services.
 
-The most important implication of using instance-based services is that they do not need to reference data in a specially-optimized ArcGIS-managed storage location. The data might be stored in an enterprise geodatabase, a network share, a cloud store, or even just a directory on the ArcGIS Server machine. For this reason, ArcGIS Online does not support instance-based services.
+The most important implication of using instance-based services is that they do not need to reference data in a specially-optimized ArcGIS-managed storage location. The data might be stored in a variety of supported databases, network shares, cloud store, or local file directories. This flexibility is only available in ArcGIS Enterprise. ArcGIS Online does not support instance-based services.
 
 One benefit of an instance-based service comes from using a data store that you have full control over. With instance-based services there is no need to copy data, and you can take advantage of the capabilities of user-managed data stores that ArcGIS-managed data stores do not have (like versioning, topology, or direct SQL access). Another advantage is that you also get substantially more control over the precise service configuration than you do with hosted services.
 
