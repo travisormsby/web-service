@@ -9,7 +9,7 @@ Sublayers do not have their own Item ID, and you do not manage access to them in
 Even though sublayers do not have an Item ID in the portal, they do have a unique Layer ID. This Layer ID allows each sublayer to reference its own unique REST endpoint, with the Layer ID at the end of the general service URL. This unique REST endpoint means that sublayers can be added individually to a map, separate from other sublayers in the same layer item. If the Layer ID for a sublayer ever changes, maps and apps that reference the sublayer’s previous URL will break. For that reason, it is extremely important to maintain Layer ID stability. This is why you must [allow assignment of unique numeric IDs](https://pro.arcgis.com/en/pro-app/latest/help/sharing/overview/assign-layer-ids.htm) in an ArcGIS Pro map before publishing layers from that map.
 
 ## Exercise: Investigate a layer (5 minutes)
-0. Open the Item Details page for the RainGaugeSites item you created earlier
+0. Open the Item Details page for the WasteWaterAreas item you created earlier
 0. Click on the first layer in the Layers section
 0. Copy the URL for the REST endpoint of this layer and paste it into a private/incognito browser tab
 0. Answer these questions:
