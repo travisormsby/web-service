@@ -14,19 +14,19 @@ Because map and feature services are different kinds of services, they are assoc
 
 ## Exercise: Add external services to the portal (10 minutes)
 
-0. Open <a href="https://arcgis.metc.state.mn.us/server/rest/services/ESWastewater/RainGaugeSitesPublic/MapServer" target="_blank">this link</a> (opens in new tab)
+0. Open <a href="https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/util_wastewater_areas_served/MapServer" target="_blank">this link</a> (opens in new tab)
 0. From the Supported Operations at the bottom of the page, click Export Map
 0. For format, select JSON, then click Export Map Image (GET)
 0. Copy the URL listed in the href property and navigate to that page
 0. In the ArcGIS Online Home app, on the Content tab, click New item
-0. Click URL, paste the first URL into the URL box, then click Next
-0. Type RainGaugeSites1_<your initials\> for the title, then click Save
-0. Open <a href="https://arcgis.metc.state.mn.us/server/rest/services/ESWastewater/RainGaugeSitesPublic/FeatureServer" target="_blank">this link</a> (opens in new tab)
+0. Click URL, paste the first URL (not the URL of the png) into the URL box, then click Next
+0. Type WasteWaterAreas1_<your initials\> for the title, then click Save
+0. Open <a href="https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/util_wastewater_areas_served/FeatureServer" target="_blank">this link</a> (opens in new tab)
 0. From the Supported Operations at the bottom of the page, Click Query
-0. For Layer Definitions, copy and paste this value: `[{"layerId": 0, "where": "1=1", "outFields": "SiteName"}]`
+0. For Layer Definitions, copy and paste this value: `[{"layerId": 0, "where": "1=1", "outFields": "*"}]`
 0. For format, select JSON, then click Query (GET)
 0. Copy the URL for the page with this query response.
-0. Repeat the process for adding this URL as an content item to ArcGIS Online, titling the item RainGaugeSites2_<your initials\>
+0. Repeat the process for adding this URL as an content item to ArcGIS Online, titling the item WasteWaterAreas2_<your initials\>
 0. Answer these questions:
     0. What kind of service is the first REST endpoint?
     0. How can you be sure of the type of service a REST endpoint provides access for?

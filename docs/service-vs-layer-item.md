@@ -17,15 +17,15 @@ Because [a layer item is not a service](https://www.esri.com/arcgis-blog/product
 0. Log into ArcGIS Online with the workshop credentials you have
 0. In the Home app, click the Content tab
 0. Click the New item button, then click Your device
-0. Navigate to the location where you downloaded the Rain Gauge Sites shapefile
-0. Select the .zip archive then click Open
+0. Navigate to the location where you downloaded the Wastewater Areas geopackage.
+0. Select the file then click Open
 0. Select the default option to add the file and create a hosted feature layer
-0. Title the item RainGaugeSites_<your initials\>, then click Save
+0. Title the item WasteWaterAreas_<your initials\>, then click Save
 0. On the item details page, note the item ID in the URL (it is a 32 character hexadecimal value) 
 0. Change the sharing options to share this item with everyone
 0. At the bottom of the Overview, copy the URL. This URL is the REST endpoint of the service associated with the item.
 0. Navigate back to the Content tab so you can see all the items owned by your username
-0. In an incognito browser window, navigate to the URL you copied, then click the link to the RainGaugeSites layer
+0. In an incognito browser window, navigate to the URL you copied, then click the link to the WasteWaterArea layer
 0. Scroll to the bottom of the page and review the supported operations
 0. Answer these questions:
     0. What is the Item ID of the first layer item you created?
